@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230724 13:44:42.751" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Robocorp\iassistant\tasks.robot">
+<test id="s1-t1" name="Process" line="13">
+<kw name="Read excel file">
+<kw name="Open Workbook" library="RPA.Excel.Files">
+<arg>challenge.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<msg timestamp="20230724 13:45:01.445" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001B9FB00AB20&gt;</msg>
+<status status="PASS" starttime="20230724 13:45:01.199" endtime="20230724 13:45:01.465"/>
+</kw>
+<kw name="Read Worksheet As Table" library="RPA.Excel.Files">
+<var>${excel_data}</var>
+<arg>header=True</arg>
+<doc>Read the contents of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<msg timestamp="20230724 13:45:01.557" level="INFO">Created table: Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<msg timestamp="20230724 13:45:01.558" level="INFO">${excel_data} = Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<status status="PASS" starttime="20230724 13:45:01.466" endtime="20230724 13:45:01.558"/>
+</kw>
+<kw name="Close Workbook" library="RPA.Excel.Files">
+<doc>Close the active workbook.</doc>
+<msg timestamp="20230724 13:45:01.559" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001B9FB00AB20&gt;</msg>
+<status status="PASS" starttime="20230724 13:45:01.559" endtime="20230724 13:45:01.559"/>
+</kw>
+<status status="PASS" starttime="20230724 13:45:01.198" endtime="20230724 13:45:01.560"/>
+</kw>
+<kw name="Open the browser">
+<kw name="Open Browser" library="RPA.Browser.Playwright">
+<arg>https://rpachallenge.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<msg timestamp="20230724 13:45:01.565" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20230724 13:45:01.569" level="INFO">{"browser": "chromium", "headless": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "deprecated_pos_args": [], "tracesDir": "C:\\Robocorp\\iassistant\\browser\\traces\\d79aa396-8ae9-414a-b3a9-71f388bc3d4f"}</msg>
+<msg timestamp="20230724 13:45:03.647" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"deprecated_pos_args":[],"tracesDir":"C:\\Robocorp\\iassistant\\browser\\traces\\d79aa396-8ae9-414a-b3a9-71f388bc3d4f"}</msg>
+<msg timestamp="20230724 13:45:03.648" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "hideRfBrowser": false,
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  },
+  "deprecated_pos_args": []
+}</msg>
+<msg timestamp="20230724 13:45:03.740" level="INFO">Successfully created context. </msg>
+<msg timestamp="20230724 13:45:03.740" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'hideRfBrowser': False, 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'viewport': {'height': 720, 'width': 1280}, 'deprecated_pos_args': []}</msg>
+<msg timestamp="20230724 13:45:05.118" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20230724 13:45:05.213" level="INFO">See also file:///C:/Robocorp/iassistant/playwright-log.txt for additional details.</msg>
+<msg timestamp="20230724 13:45:05.224" level="FAIL">Error: page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://rpachallenge.com/
+=========================== logs ===========================
+navigating to "https://rpachallenge.com/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20230724 13:45:01.563" endtime="20230724 13:45:05.250"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230724 13:45:05.257" endtime="20230724 13:45:05.260"/>
+</kw>
+<status status="FAIL" starttime="20230724 13:45:01.561" endtime="20230724 13:45:05.261"/>
+</kw>
+<kw name="Fill in rpa challenge">
+<status status="NOT RUN" starttime="20230724 13:45:05.264" endtime="20230724 13:45:05.266"/>
+</kw>
+<status status="FAIL" starttime="20230724 13:45:01.190" endtime="20230724 13:45:05.308">Error: page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://rpachallenge.com/
+=========================== logs ===========================
+navigating to "https://rpachallenge.com/", waiting until "load"
+============================================================</status>
+</test>
+<doc>Reads the local excel file and applies it to the rpa challenge.</doc>
+<status status="FAIL" starttime="20230724 13:44:42.782" endtime="20230724 13:45:05.617"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230724 13:45:01.565" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20230724 13:45:05.118" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+</errors>
+</robot>

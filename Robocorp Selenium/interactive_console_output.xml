@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230719 17:49:19.282" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\dineshkumar.ravikuma\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Log To Console" library="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230719 17:49:44.702" endtime="20230719 17:49:44.703"/>
+</kw>
+<kw name="Open Workbook">
+<arg>SalesData.xlsx</arg>
+<msg timestamp="20230719 17:49:52.426" level="FAIL">No keyword with name 'Open Workbook' found.</msg>
+<status status="FAIL" starttime="20230719 17:49:52.426" endtime="20230719 17:49:52.426"/>
+</kw>
+<kw name="Read Worksheet As Table">
+<var>${sales_data}</var>
+<arg>header=True</arg>
+<status status="NOT RUN" starttime="20230719 17:49:52.432" endtime="20230719 17:49:52.432"/>
+</kw>
+<kw name="Close Workbook">
+<status status="NOT RUN" starttime="20230719 17:49:52.437" endtime="20230719 17:49:52.437"/>
+</kw>
+<kw name="Open Workbook" library="RPA.Excel.Files">
+<arg>SalesData.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<status status="PASS" starttime="20230719 17:50:41.515" endtime="20230719 17:50:41.538"/>
+</kw>
+<kw name="Read Worksheet As Table" library="RPA.Excel.Files">
+<var>${sales_data}</var>
+<arg>header=True</arg>
+<doc>Read the contents of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<msg timestamp="20230719 17:50:41.539" level="INFO">${sales_data} = Table(columns=['First Name', 'Last Name', 'Sales', 'Sales Target'], rows=50)</msg>
+<status status="PASS" starttime="20230719 17:50:41.538" endtime="20230719 17:50:41.539"/>
+</kw>
+<kw name="Close Workbook" library="RPA.Excel.Files">
+<doc>Close the active workbook.</doc>
+<status status="PASS" starttime="20230719 17:50:41.540" endtime="20230719 17:50:41.540"/>
+</kw>
+<status status="PASS" starttime="20230719 17:49:19.431" endtime="20230719 17:50:51.939"/>
+</kw>
+<status status="PASS" starttime="20230719 17:49:19.428" endtime="20230719 17:50:51.939"/>
+</test>
+<status status="PASS" starttime="20230719 17:49:19.285" endtime="20230719 17:50:51.942"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

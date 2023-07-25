@@ -1,0 +1,61 @@
+{"level":30,"time":"2023-07-24T08:15:00.983Z","pid":20684,"hostname":"DineshkumarR","msg":"Listening on 58856"}
+{"level":30,"time":"2023-07-24T08:15:01.188Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:01.189Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:01.195Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:01.195Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:01.575Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-07-24T08:15:03.645Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-07-24T08:15:03.652Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-07-24T08:15:03.654Z","pid":20684,"hostname":"DineshkumarR","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-07-24T08:15:03.654Z","pid":20684,"hostname":"DineshkumarR","msg":"Trace file: "}
+{"level":30,"time":"2023-07-24T08:15:03.734Z","pid":20684,"hostname":"DineshkumarR","msg":"Changed active context"}
+{"level":30,"time":"2023-07-24T08:15:03.735Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method newContext"}
+{"level":30,"time":"2023-07-24T08:15:03.744Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-07-24T08:15:03.745Z","pid":20684,"hostname":"DineshkumarR","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-07-24T08:15:04.716Z","pid":20684,"hostname":"DineshkumarR","msg":"Video path: undefined"}
+{"level":30,"time":"2023-07-24T08:15:04.716Z","pid":20684,"hostname":"DineshkumarR","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://rpachallenge.com/
+=========================== logs ===========================
+navigating to "https://rpachallenge.com/", waiting until "load"
+============================================================
+    at newPage (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\index.js:9663:18)
+    at async PlaywrightServer.newPage (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\index.js:9987:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2023-07-24T08:15:05.081Z","pid":20684,"hostname":"DineshkumarR","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+{"level":30,"time":"2023-07-24T08:15:05.114Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method takeScreenshot"}
+Error: Tried to take screenshot, but no page was open.
+    at exists (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\index.js:8275:11)
+    at takeScreenshot (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\index.js:8312:3)
+    at PlaywrightServer.takeScreenshot (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\index.js:9987:34)
+    at c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:821:17
+    at Http2ServerCallStream.safeDeserializeMessage (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-call.js:395:13)
+    at ServerHttp2Stream.onEnd (c:\ProgramData\robocorp\ht\71a498c_b1f3c24_59f207d3\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-call.js:382:22)
+    at ServerHttp2Stream.emit (node:events:538:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+=============================================================
+{"level":30,"time":"2023-07-24T08:15:05.115Z","pid":20684,"hostname":"DineshkumarR","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2023-07-24T08:15:05.333Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.334Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.343Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.343Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.352Z","pid":20684,"hostname":"DineshkumarR","msg":"Changed active context"}
+{"level":30,"time":"2023-07-24T08:15:05.361Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.361Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.367Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-07-24T08:15:05.368Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-07-24T08:15:05.380Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-07-24T08:15:05.381Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-07-24T08:15:05.407Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.407Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.412Z","pid":20684,"hostname":"DineshkumarR","msg":"Changed active context"}
+{"level":30,"time":"2023-07-24T08:15:05.415Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-07-24T08:15:05.577Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-07-24T08:15:05.630Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:05.630Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-24T08:15:09.110Z","pid":20684,"hostname":"DineshkumarR","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-07-24T08:15:09.372Z","pid":20684,"hostname":"DineshkumarR","msg":"End of node method closeAllBrowsers"}

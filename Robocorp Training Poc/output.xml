@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230720 15:24:55.048" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Robocorp\pwrcorp\tasks.robot">
+<test id="s1-t1" name="concatinating strings" line="11">
+<kw name="concat string with hyphens">
+<kw name="concad-two-strings" library="utils">
+<var>${res_string}</var>
+<arg>Hello</arg>
+<arg>Dinesh R</arg>
+<kw name="Catenate" library="BuiltIn">
+<var>${res_string}</var>
+<arg>Separator=---</arg>
+<arg>${string1}</arg>
+<arg>${string2}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230720 15:24:55.337" level="INFO">${res_string} = Separator=--- Hello Dinesh R</msg>
+<status status="PASS" starttime="20230720 15:24:55.336" endtime="20230720 15:24:55.359"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${res_string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230720 15:24:55.360" endtime="20230720 15:24:55.363"/>
+</kw>
+<return>
+<value>${res_string}</value>
+<status status="PASS" starttime="20230720 15:24:55.369" endtime="20230720 15:24:55.371"/>
+</return>
+<msg timestamp="20230720 15:24:55.372" level="INFO">${res_string} = Separator=--- Hello Dinesh R</msg>
+<status status="PASS" starttime="20230720 15:24:55.335" endtime="20230720 15:24:55.376"/>
+</kw>
+<status status="PASS" starttime="20230720 15:24:55.334" endtime="20230720 15:24:55.377"/>
+</kw>
+<status status="PASS" starttime="20230720 15:24:55.332" endtime="20230720 15:24:55.378"/>
+</test>
+<doc>Playwright template.</doc>
+<status status="PASS" starttime="20230720 15:24:55.083" endtime="20230720 15:24:55.382"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

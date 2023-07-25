@@ -1,0 +1,5 @@
+{"level":30,"time":"2023-07-20T09:10:16.945Z","pid":16532,"hostname":"DineshkumarR","msg":"Listening on 58649"}
+{"level":30,"time":"2023-07-20T09:10:17.113Z","pid":16532,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-20T09:10:17.114Z","pid":16532,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-20T09:10:17.130Z","pid":16532,"hostname":"DineshkumarR","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-07-20T09:10:17.130Z","pid":16532,"hostname":"DineshkumarR","msg":"End of node method getBrowserCatalog"}
